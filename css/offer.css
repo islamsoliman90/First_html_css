@@ -10,16 +10,26 @@
 .offer-item .section-header{
     text-align: left;
 }
+.offer-item .section-header .section-title{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
 .offer-item .line{
     margin-left: 10px;
 }
 .offer-item .offer-item-desc{
     color: #e8e8e8;
-    line-height: 1.6;
-    margin: 10px 10px 10px 0px;
+    line-height: 1.2;
+    margin: 0px 10px 10px 0px;
 }
 .offer-item .offer-lest li{
     margin-bottom:10px ;
+}
+.offer-lest h4{
+    display: inline-block;
+    font-size: 12px;
 }
 .offer-item .offer-lest i{
     color:var(--maincolor);;
