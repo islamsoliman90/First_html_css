@@ -1,0 +1,39 @@
+
+/* service section */
+.servec-item{
+    position: relative;
+    width: 32%;
+    height: 200px;
+    border: #e8e8e8 solid 1px;
+    float: left;
+    margin-bottom: 30px;
+}
+.servec-container .marser {
+margin: 0 2% 0 2%;
+}
+.servec-item i{
+    position: absolute;
+    left: 14px;
+    top: 35px;
+    color:var(--maincolor);
+}
+.servec-containt{
+    padding: 35px 20px 30px 70px;
+    text-align: left;
+}
+.servec-title{
+    transition: color 2s;
+    margin-bottom: 7px;
+
+}
+.servec-item .servec-desc{
+    color: #e8e8e8;
+    transition: color 2s;
+    line-height:1.8;
+}
+.servec-item:hover .servec-desc{
+    color:#8a8a8a;
+}
+.servec-containt:hover .servec-title{
+    color: #fff;
+}

@@ -1,0 +1,55 @@
+
+/* offer section */
+.offer{
+    background-color:var(--white-f9);
+}
+.offer-item{
+    width: 50%;
+    float: left;
+}
+.offer-item .section-header{
+    text-align: left;
+}
+.offer-item .line{
+    margin-left: 10px;
+}
+.offer-item .offer-item-desc{
+    color: #e8e8e8;
+    line-height: 1.6;
+    margin: 10px 10px 10px 0px;
+}
+.offer-item .offer-lest li{
+    margin-bottom:10px ;
+}
+.offer-item .offer-lest i{
+    color:var(--maincolor);;
+    border:var(--maincolor) solid 1px ;   
+    border-radius: 50%;
+    padding: 7px 5px;
+}
+.offer-item-img{
+    width :50%;
+    float: left;
+}
+.offer-item-img .offer-pol{
+    text-align: center;
+    margin-right: 120px;
+}
+.offer-pol li{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color:#8a8a8a;
+    text-align: center;
+    border-radius: 50%;
+}
+.offer-pol .active{
+    background-color:var(--maincolor);
+    width: 20px;
+    border-radius: 20%;
+}
+.offer-pol li:hover{
+    background-color:var(--maincolor);
+    width: 20px;
+    border-radius: 20%;
+}

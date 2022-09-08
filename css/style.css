@@ -1,0 +1,200 @@
+
+
+
+
+/*  
+-opacity hover
+-section header
+-section padding
+-hover effect 1 (left to right)
+-hover effect 1 (top to botton)
+- div continer
+*/
+
+
+/* common */
+:root{
+    --maincolor:#6195ff;
+    --blackc:#333;
+    --white-f9:#f9f9f9;
+}
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+ul{
+    list-style: none;
+}
+.section-header{
+    text-align: center;
+
+
+}
+.section-header .section-title{
+font-size: 35px;
+text-transform: capitalize;
+margin-bottom:10px ;
+} 
+.section-header .line{
+    width: 70px;
+    height: 5px;
+    background-color:var(--maincolor);
+    display: block;
+    margin: 0px auto 70px auto;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.pd-y{
+    padding: 120px 0px;
+}
+.clear{
+    clear: both;
+}
+.ltreffect{
+    position: relative;
+    height: 100%;
+}   
+.TTBeffect{
+    position: relative;
+    width: 100%;
+} 
+.ltreffect::after
+,.TTBeffect::after{
+    position: absolute;
+    content: "";
+    background-color: var(--blackc);
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.8;
+    z-index: -1;
+}
+.ltreffect::after{
+    width: 0%;
+    transition: width 2s;
+}
+.TTBeffect::after{
+    height: 0%;
+    transition: height 2s;
+}
+.ltreffect:hover::after{
+    width: 100%;
+}
+.TTBeffect:hover::after{
+    height: 100%;
+} 
+.overlay{
+    position: absolute;
+    background-color:rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;  
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:mostserrat,sans-serif;
+}
+button{
+    font-family:inherit;
+}
+.hover-opacity{
+    transition:opacity .5s; 
+}
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+.clear{
+    clear: both;
+}
+/* header */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    
+}
+.header-containt{ 
+background-color: var(--blackc);
+opacity: .6;
+}
+.header .logo{
+    width: 40%;
+    float:left
+}
+.header .logo img{
+    width: 20%;
+    margin-top: 15px;
+    margin-left: 141px;
+}
+.header .nav{
+    width: 51%;
+    float: left;
+    text-align: right;
+}
+.header .nav > li{
+    display: inline-block;
+    text-align: right;
+} 
+.header .nav > li > a{
+    color: #fff;
+    font-size: 10px;
+    padding: 30px 10px 0px 10px;
+    display: block;   
+}
+.header .nav > li > a::after,
+.header .nav > li > .active::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color:var(--maincolor);
+}
+.header .nav > li > a::after{
+    width: 0%;
+    transition: width 2s;
+}
+.header .nav > li > .active::after{
+    width: 100%;
+}
+.header .nav > li a:hover::after{
+    width: 100%;
+}
+.dropdown{    
+position: relative;
+height: 20px;
+}
+.dropdown-menu li {
+    FONT-WEIGHT: 10px;
+    display: block;
+    background-color:var(--maincolor);
+    width: 100px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    padding:10px ;
+}
+.dropdown-menu{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -50%;
+    transition: opacity  .5s, visibility .5s ; 
+}
+.dropdown-menu li a{
+    font-size: 10;
+    color: #fff;
+}
+.dropdown:hover .dropdown-menu   {
+visibility: visible;
+opacity: 100%;
+}

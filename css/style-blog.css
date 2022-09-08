@@ -1,0 +1,72 @@
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+  .head-blog{
+    height: 55vh;
+    background-color: #eee;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .float-left{
+    float: left;
+  }
+  .breadcrumbs ul{
+    margin-left: 68%;
+    position: absolute;
+    margin-top: 10%;
+}
+  
+  .head-blog-title h1{
+    margin: 161px 0 0 180px;
+    position: absolute;
+  }
+  .search {
+    position: relative;
+      width: 100px;
+      height: 40px;
+    }
+
+  .search i{
+    position: absolute;
+    right: -58px;
+    top: 2px;
+  }
+  .page-blog-containt {
+    overflow: hidden;
+  }
+  .main-page-blog{
+    width: 70%;
+    float: left;
+  }
+  .right-side{
+    width: 30%;
+    float: left;
+  }
