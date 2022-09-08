@@ -16,8 +16,8 @@
     margin-bottom: 40px;
 }
 
-.offer-item .line{
-    margin-left: 10px;
+.offer-item .section-header .line{
+    margin:0px 0px 27px 0px;
 }
 .offer-item .offer-item-desc{
     color: #e8e8e8;
