@@ -127,6 +127,7 @@ button{
 .header-containt{ 
 background-color: var(--blackc);
 opacity: .6;
+max-height: 64px;
 }
 .header .logo{
     width: 40%;
@@ -134,7 +135,7 @@ opacity: .6;
 }
 .header .logo img{
     width: 20%;
-    margin-top: 15px;
+    margin-top: -5px;
     margin-left: 141px;
 }
 .header .nav{
